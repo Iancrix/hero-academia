@@ -1,0 +1,58 @@
+.hero-card {
+    position: relative;
+    display: inline-block;
+
+    background: white;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    border-radius: 4px;
+}
+
+.hero-card-content {
+    padding: 0.5rem 1rem;
+}
+
+.--selected {
+    /*background: red;*/
+}
+
+.hero-card h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.hero-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero-card h3 {
+    text-align: left;
+    font-size: 0.95rem;
+    margin: .5rem 0rem;
+}
+
+.hero-card p {
+    font-size: 0.85rem;
+    text-align: justify;
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 35px;
+    width: 100%;
+
+    padding-bottom: 0.25rem;
+
+    outline: none;
+    border: none;
+    background: red;
+
+    color: white;
+    border-radius: 4px;
+}

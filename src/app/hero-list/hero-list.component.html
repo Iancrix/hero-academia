@@ -1,0 +1,5 @@
+<ul ngClass="hero-list">
+    <app-hero-item *ngFor="let hero of heroes" [hero]="hero" [selectedHero]="selectedHero"
+        (selected)="onSelectHero(hero)" (refresh)="refresh()">
+    </app-hero-item>
+</ul>

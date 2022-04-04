@@ -1,0 +1,8 @@
+.hero-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin-top: 1rem;
+}

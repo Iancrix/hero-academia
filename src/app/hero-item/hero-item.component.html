@@ -1,0 +1,13 @@
+<li ngClass="hero-card" [class.--selected]="selectedHero && selectedHero.id == hero.id" *ngIf="hero"
+    (click)="selected.emit()">
+    <div ngClass="hero-card-content">
+        <a routerLink="/heroes/{{hero.id}}">
+            <h2>{{hero.name | uppercase}}</h2>
+        </a>
+        <img ngClass="hero-img" [src]="hero.imageUrl">
+
+        <h3>Background story</h3>
+        <p>{{hero.backgroundStory}}</p>
+    </div>
+    <button ngClass="delete-btn" type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+</li>
